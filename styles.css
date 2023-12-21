@@ -1,0 +1,44 @@
+body{
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+    display: grid;
+    row-gap: 5%;
+    margin: 0;
+}
+.colored-text{
+    color:blue;
+}
+
+.Information{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+
+}
+.projects{
+    margin-left: 5%;
+}
+  
+.boxes{
+    background-color: #240f15;
+    border-radius: 10px;
+    color:#82a8c9;
+    margin: 1rem;
+}
+ 
+img{
+    width: 400px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #240f15;
+    color:#82a8c9;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+    align-items: center;
+}
+hr{
+    height: 60%;
+}
