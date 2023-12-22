@@ -55,7 +55,7 @@ while True: #Infinite loop, waits for the user to access a webpage
             connectionSocket.send("HTTP/1.1 200 OK\r\n".encode())
             connectionSocket.send("Content-Type: image/png\r\n".encode())
             connectionSocket.send("\r\n".encode())
-            with open("img/Network.png", "rb") as img_file:
+            with open("img/pngpicture.png", "rb") as img_file:
                 img_data = img_file.read()
             connectionSocket.send(img_data)
 
@@ -63,7 +63,7 @@ while True: #Infinite loop, waits for the user to access a webpage
             connectionSocket.send("HTTP/1.1 200 OK\r\n".encode())
             connectionSocket.send("Content-Type: image/jpeg\r\n".encode())
             connectionSocket.send("\r\n".encode())
-            with open("img/Networks2.jpg", "rb") as img_file:
+            with open("img/Network1.jpg", "rb") as img_file:
                 img_data = img_file.read()
             connectionSocket.send(img_data)
 
@@ -87,7 +87,7 @@ while True: #Infinite loop, waits for the user to access a webpage
             connectionSocket.send("\r\n".encode())
 
         elif "GET /rt" in sentence:
-            #Same thing as above, but for Ritaj uni website 
+            #Same thing as above, but for Rita website 
             connectionSocket.send("HTTP/1.1 307 Temporary Redirect\r\n".encode())
             connectionSocket.send(f"Location: https://ritaj.birzeit.edu\r\n".encode())
             connectionSocket.send("\r\n".encode())
